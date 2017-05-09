@@ -1,14 +1,20 @@
 {
-  "name": "node-streetview",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Micah Fitzgerald",
-  "license": "GPL-2.0",
-  "dependencies": {
-    "request-promise-native": "^1.0.4"
-  }
+    "name": "streetview",
+    "version": "0.0.1",
+    "description": "Simple wrapper for Google Maps Streetview API",
+    "keywords": ["streetview"],
+    "main": "index.js",
+    "author": {
+        "name": "Micah Fitzgerald",
+        "email": "mcfitz2@gmail.com"
+    },
+    "license": "GPL-2.0",
+    "dependencies": {
+        "request-promise-native": "^1.0.4"
+    },
+    "bugs": "https://github.com/mcfitz2/streetview/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mcfitz2/streetview.git"
+    }
 }
