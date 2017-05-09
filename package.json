@@ -1,6 +1,6 @@
 {
     "name": "streetview",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Simple wrapper for Google Maps Streetview API",
     "keywords": ["streetview"],
     "main": "index.js",
