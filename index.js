@@ -5,7 +5,7 @@ function streetview(opts) {
 }
 streetview.prototype.image = function(opts) {
     if (!opts.location && !opts.pano && !opts.lat && !opts.lng) {
-        return Promse.reject("You must supply a location, lat/lng, or panorama ID");
+        return Promise.reject("You must supply a location, lat/lng, or panorama ID");
     }
     if ((opts.lat && !opts.lng) || (opts.lng && !opts.lat)) {
         return Promise.reject("You must supply both lat and lng");
@@ -31,7 +31,7 @@ streetview.prototype.image = function(opts) {
 
 streetview.prototype.metadata = function(opts) {
     if (!opts.location && !opts.pano && !opts.lat && !opts.lng) {
-        return Promse.reject("You must supply a location, lat/lng, or panorama ID");
+        return Promise.reject("You must supply a location, lat/lng, or panorama ID");
     }
     if ((opts.lat && !opts.lng) || (opts.lng && !opts.lat)) {
         return Promise.reject("You must supply both lat and lng");
