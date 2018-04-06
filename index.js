@@ -15,7 +15,7 @@ streetview.prototype.image = function(opts) {
     }
     var BASE = "https://maps.googleapis.com/maps/api/streetview"
     opts.key = this.key;
-    if (opts.location === null) {
+    if (opts.location === null || opts.location === undefined) {
         opts.location = opts.lat + "," + opts.lng;
     }
     delete opts.lat;
@@ -38,7 +38,7 @@ streetview.prototype.metadata = function(opts) {
     }
     var BASE = "https://maps.googleapis.com/maps/api/streetview/metadata"
     opts.key = this.key;
-    if (opts.location === null) {
+    if (opts.location === null || opts.location === undefined) {
         opts.location = opts.lat + "," + opts.lng;
     }
     delete opts.lat;
